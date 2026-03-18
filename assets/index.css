@@ -1,0 +1,116 @@
+body {
+  background-image: url(../assets/ferrentovatop.jpg);
+  background-size: cover;
+  text-align: center;
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  margin-bottom: 1em;
+  font-size: 80px;
+  color: #d16d2f;
+  -webkit-text-stroke: 1.5px #7e2e17;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  max-width: 800px;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+input[type="text"] {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #d16d2f;
+  flex-grow: 1;
+  width: 15em;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s;
+  margin-right: 0.5em;
+}
+
+input[type="text"]:focus {
+  border-color: #4caf50;
+}
+
+button[type="submit"] {
+  padding: 12px 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #d16d2f;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid #d16d2f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  margin-bottom: 1em;
+  transition: all 0.2s;
+}
+
+li span {
+  flex-grow: 1;
+  cursor: pointer;
+  font-size: 20px;
+  color: black;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  opacity: 1;
+}
+
+.delete-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+  margin-right: 1.5em;
+}
+
+li:hover .delete-btn {
+  opacity: 1;
+}
+
+.delete-btn:hover {
+  background-color: #cc0000;
+}
