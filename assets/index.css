@@ -89,9 +89,9 @@ li span {
   color: black;
 }
 
-li.completed span {
+.completed {
   text-decoration: line-through;
-  opacity: 1;
+  color: #d16d2f;
 }
 
 .delete-btn {
